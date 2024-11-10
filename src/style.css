@@ -105,6 +105,21 @@ ul li, ol li {
   margin-bottom: 10px;
 }
 
+/* Flexbox para colocar as listas lado a lado */
+.ingredients, .modo-preparo {
+  display: flex;
+  justify-content: space-between; /* Distribui os itens */
+  gap: 20px; /* Espaço entre as duas seções */
+}
+
+.ingredients ul, .modo-preparo ol {
+  flex: 1; /* Faz com que cada lista ocupe 50% da largura */
+}
+
+.ingredients ul li, .modo-preparo ol li {
+  margin-bottom: 10px;
+}
+
 /* Estilo do Rodapé */
 footer {
   background-color: #333;
